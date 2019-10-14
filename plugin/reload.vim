@@ -11,5 +11,5 @@
 "
 " ============================================================================
 function! reload#TriggerHotReload() abort
-	silent execute '!kill -SIGUSR1 "$(pgrep -f flutter_tools.snapshot)" &> /dev/null'
+	silent execute '!kill -SIGUSR1 "$(pgrep -f flutter_tools.snapshot\ run)" &> /dev/null'
 endfunction
